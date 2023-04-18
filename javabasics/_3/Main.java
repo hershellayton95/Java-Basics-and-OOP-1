@@ -14,6 +14,9 @@ public class Main {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Write your code here
+        System.out.print("F");
+        System.out.print("D");
+        System.out.println("M");
     }
 
     /**
@@ -24,6 +27,9 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         // Write your code here
+        System.out.println("28");
+        System.out.println(true);
+        System.out.println(4.99d);
     }
 
     /**
@@ -37,6 +43,9 @@ public class Main {
      */
     private static void exercise3() {
         System.out.println("\nExercise 3:");
-        // Write your code here
+        // Write your code here.
+        char favouriteLetter = 'g';
+        System.out.print("My favourite letter = ");
+        System.out.println(favouriteLetter);
     }
 }

@@ -16,6 +16,9 @@ public class Main {
     private static void exercise1() {
         System.out.println("\nExercise 1:");
         //Write your code here
+        String someText = "Some text";
+        System.out.println(someText.toLowerCase());
+        System.out.println(someText.toUpperCase());
     }
 
     /**
@@ -24,11 +27,11 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         // Change these
-        String firstName = "(your first name)";
-        String middleName = "(your middle name/any middle name)";
-        String lastName = "(your last name)";
+        String firstName = "Filippo";
+        String middleName = "Hershel";
+        String lastName = "Di Marco";
 
-        System.out.println(firstName + " " + middleName + " " + lastName); // <--- Edit this line
+        System.out.println(firstName.toUpperCase() + " " + middleName.toLowerCase() + " " + lastName.toUpperCase()); // <--- Edit this line
     }
 
 
@@ -52,7 +55,7 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
-        String textFrom2Primitives = ""; // <--- Edit this line
+        String textFrom2Primitives = "" + 1 + true + 5.0 + 'f'; // <--- Edit this line
         System.out.println(textFrom2Primitives);
     }
 
@@ -70,7 +73,7 @@ public class Main {
         String middleNumbers = "       4 5 6";
         String earlyNumbers = "1 2 3";
 
-        System.out.println(); // <--- Write your code here
+        System.out.println(earlyNumbers.trim() + " " +  middleNumbers.trim() + " " + earlyNumbers.trim() ); // <--- Write your code here
     }
 
 

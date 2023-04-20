@@ -27,6 +27,11 @@ public class Main {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Write your code here
+        int value = 1;
+        value = value + 1;
+        System.out.println(value);
+        value = value - 1;
+        System.out.println(value);
     }
 
     /**
@@ -38,6 +43,12 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         // Write your code here
+        double value = 1.0;
+        value *= 2;
+        System.out.println(value);
+        double anotherValue = 1.0;
+        anotherValue /= 2;
+        System.out.println(anotherValue);
     }
 
     /**
@@ -55,6 +66,10 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
         // Write your code here
+        double celsius = 1.0;
+        double fahranheit = 1 * 1.8 + 32;
+        System.out.println(celsius);
+        System.out.println(fahranheit);
     }
 
     /**
@@ -67,6 +82,12 @@ public class Main {
     private static void exercise4Bonus() {
         System.out.println("\nExercise 4:");
         // Write your code here
+        int value = 10;
+        value++;
+        value++;
+        value++;
+        value++;
+        value++;
     }
 
     /**
@@ -83,6 +104,13 @@ public class Main {
     private static void exercise5Bonus() {
         System.out.println("\nExercise 5:");
         // Write your code here
+        int age = 50;
+        age -= 50;
+        int secondAge = 50;
+        secondAge -= 10;
+        secondAge -= 10;
+        secondAge -= 30;
+
     }
 
     /**

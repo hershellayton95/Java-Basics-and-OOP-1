@@ -17,6 +17,8 @@ public class Main {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Write your code here
+        double value = 2.0;
+        double valueSquareRoot = Math.sqrt(value);
     }
 
     /**
@@ -34,7 +36,9 @@ public class Main {
         int valueB = 10;
 
         System.out.println("Max=");
+        System.out.println(Math.max(valueA, valueB));
         System.out.println("Min=");
+        System.out.println(Math.min(valueA, valueB));
 
         // Write your code here
     }
@@ -49,6 +53,7 @@ public class Main {
         int costPerBurger = 9;
         // Write your code here
         System.out.println("Remainder=");
+        System.out.println(totalMoney % costPerBurger);
     }
 
     /**

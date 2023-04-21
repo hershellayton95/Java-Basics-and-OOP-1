@@ -1,5 +1,7 @@
 package javabasics._8;
 
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
         exercise1();
@@ -19,6 +21,10 @@ public class Main {
         System.out.println("\nExercise 1:");
         String ourNumberStr = "88";
         //Write your code here
+        int ourNumberInt = Integer.valueOf(ourNumberStr);
+        ourNumberInt += 2;
+        ourNumberStr = String.valueOf(ourNumberInt);
+        System.out.println(ourNumberStr);
     }
 
     /**
@@ -30,7 +36,7 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2a:");
         char ourChar = 'a';
-        String ourCharString = " "; // <--- Change this line
+        String ourCharString = String.valueOf(ourChar).toUpperCase(); // <--- Change this line
         // Notice below what happens, the `charAt()` method
         System.out.println(ourCharString.charAt(0));
 
@@ -50,13 +56,13 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
-        String intStrToConvert = "5.5"; // Change this line
+        String intStrToConvert = "5"; // Change this line
         System.out.println(Integer.valueOf(intStrToConvert));
 
-        String booleanStrToConvert = "maybe"; // And this line
+        String booleanStrToConvert = "true"; // And this line
         System.out.println(Boolean.valueOf(booleanStrToConvert));
 
-        String doubleStrToConvert = "true"; // Also this line
+        String doubleStrToConvert = "5.5"; // Also this line
         System.out.println(Double.valueOf(doubleStrToConvert));
     }
 
@@ -76,5 +82,11 @@ public class Main {
         System.out.println("\nExercise 4:");
         String startStr = "5 ";
         // Write your code here
+        int startInt = Integer.valueOf(startStr.trim());
+        startInt *= 2;
+        startStr = String.valueOf(startInt);
+        startStr += startStr;
+        double startDouble = Double.valueOf(startStr) / 3.5;
+        System.out.println(Math.floor(startDouble));
     }
 }

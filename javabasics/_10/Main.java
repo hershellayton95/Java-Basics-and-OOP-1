@@ -31,6 +31,11 @@ public class Main {
         boolean wearingShorts = true;
 
         // Write your code here
+        if(isWarm && wearingShorts || !isWarm && !wearingShorts){
+            System.out.println("Comfortable clothes");
+        } else {
+            System.out.println("Uncomfortable clothes");
+        }
     }
 
     /**
@@ -53,6 +58,11 @@ public class Main {
         double eurosForEntry = 10;
 
         // Write your code here
+        if(shoeType == "fancy" && age > 18 && eurosInPocket >= eurosForEntry){
+            System.out.println("Come in!");
+        } else {
+            System.out.println("Stay out!");
+        }
     }
 
     /**
@@ -74,6 +84,20 @@ public class Main {
         double maxTestScore = 10;
         boolean isTestRetry = true;
         //Write your code here
+        if (ourTestScore/maxTestScore >= 9){
+            isTestRetry = !true;
+            System.out.println("A");
+        } else if (ourTestScore/maxTestScore >= 8){
+            isTestRetry = !true;
+            System.out.println("B");
+        } else if (ourTestScore/maxTestScore >= 7){
+            isTestRetry = !true;
+            System.out.println("C");
+        } else if (ourTestScore/maxTestScore >= 6){
+            System.out.println("D");
+        } else if (ourTestScore/maxTestScore < 6){
+            System.out.println("F");
+        }
     }
 
 
@@ -91,5 +115,10 @@ public class Main {
         boolean carIsDrivingFromRightToLeft = false;
 
         //Write your code here
+        if (carIsDrivingFromLeftToRight ^ carIsDrivingFromRightToLeft ){
+            System.out.println("save");
+        } else {
+            System.out.println("CRASH!");
+        }
     }
 }

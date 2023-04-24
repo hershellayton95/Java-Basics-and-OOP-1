@@ -8,6 +8,8 @@ public class Main {
         exercise1();
         exercise2();
         exercise3();
+        exercise4();
+        exercise5();
     }
 
     /**
@@ -26,17 +28,28 @@ public class Main {
         int sumForA = 0;
 
         // Write your code for 1a here
+        for (int item : itemsA) {
+            sumForA += item;
+        }
+
         System.out.println("\nExercise 1b:");
         int[] itemsB = new int[]{1, 56, 23};
 
         int sumForB = 0;
 
         // Write your code for 1b here
+        for (int item : itemsB) {
+            sumForB += item;
+        }
+
         System.out.println("\nExercise 1c:");
 
         int sumForC = 0;
 
         // Write your code for 1c here, refer back to the lesson to check the fori syntax
+        for (int i = 0; i < itemsA.toArray().length; i++) {
+            sumForC += itemsA.get(i);
+        }
 
         if (sumForA != sumForB || sumForB != sumForC) {
             System.out.println("Failed, sums are different!");
@@ -55,6 +68,14 @@ public class Main {
         int maxNumber = 0;
 
         // Write code here
+        for (int item : items) {
+            if(item < minNumber) {
+                minNumber = item;
+            }
+            if(item > maxNumber){
+                maxNumber = item;
+            }
+        }
     }
 
     /**
@@ -65,7 +86,7 @@ public class Main {
 
         for (
                 int index = 0;
-                index < names.size(); // <---- Edit this line
+                index < 2; // <---- Edit this line
                 index = index + 1
         ) {
             System.out.println(names.get(index));
@@ -84,9 +105,9 @@ public class Main {
      */
     private static void exercise4() {
         for (
-                int timesTableCurrentValue = 5; // <---- Edit this line
-                timesTableCurrentValue <= 50; // <---- Edit this line
-                timesTableCurrentValue = timesTableCurrentValue + 5 // <---- Edit this line
+                int timesTableCurrentValue = 8; // <---- Edit this line
+                timesTableCurrentValue <= 80; // <---- Edit this line
+                timesTableCurrentValue = timesTableCurrentValue + 8 // <---- Edit this line
         ) {
             System.out.println(timesTableCurrentValue);
         }
@@ -104,7 +125,14 @@ public class Main {
      */
     private static void exercise5() {
         for (int timesTableNumber = 1; timesTableNumber <= 10; timesTableNumber++) {
-            // Your fori loop here
+            // Your fori loop
+            for (
+                    int timesTableCurrentValue = timesTableNumber; // <---- Edit this line
+                    timesTableCurrentValue <= timesTableNumber * 10; // <---- Edit this line
+                    timesTableCurrentValue = timesTableCurrentValue + timesTableNumber // <---- Edit this line
+            ) {
+                System.out.println(timesTableCurrentValue);
+            }
         }
     }
 }

@@ -23,6 +23,21 @@ public class Main {
         ArrayList<Integer> numbers = new ArrayList<>();
 
         //Write your code here
+
+        numbers.add(Integer.valueOf(String.valueOf(Math.round(Math.random()*10))));
+        numbers.add(Integer.valueOf(String.valueOf(Math.round(Math.random()*10))));
+        numbers.add(Integer.valueOf(String.valueOf(Math.round(Math.random()*10))));
+        numbers.add(Integer.valueOf(String.valueOf(Math.round(Math.random()*10))));
+        numbers.add(Integer.valueOf(String.valueOf(Math.round(Math.random()*10))));
+        numbers.add(Integer.valueOf(String.valueOf(Math.round(Math.random()*10))));
+        numbers.add(Integer.valueOf(String.valueOf(Math.round(Math.random()*10))));
+
+        System.out.println(numbers);
+        System.out.println(numbers.get(0));
+        numbers.remove(0);
+        numbers.remove(0);
+        numbers.remove(0);
+        System.out.println(numbers.get(0));
     }
 
     /**
@@ -40,6 +55,13 @@ public class Main {
     public static void exercise2() {
         System.out.println("\nExercise 1:");
         //Write your code here
+
+        ArrayList<String> menuItems = new ArrayList<>();
+        ArrayList<Double> menuPrices = new ArrayList<>();
+        menuItems.add("Pizza");
+        menuPrices.add(6.0);
+        int index = 0;
+        System.out.println(menuItems.get(index) + " = " + menuPrices.get(index));
     }
 
     /**
@@ -56,7 +78,11 @@ public class Main {
     public static void exercise3() {
         System.out.println("\nExercise 3:");
         int[] items = new int[]{5, 10404, -234348, -53, 9, 91, 92, 34534, 12334, 1435};
-
+        int total = 0;
+        for (int item : items) {
+            total += item;
+        }
+        System.out.println(total);
         //Write your code here
     }
 }

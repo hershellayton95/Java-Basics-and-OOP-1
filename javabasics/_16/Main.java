@@ -21,11 +21,16 @@ public class Main {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Put this into a function
+        String conversionDescription = celsiusToFahrenheit();
+        // End
+        System.out.println(conversionDescription);
+    }
+
+    private static String celsiusToFahrenheit() {
         double celsius = 30;
         double fahrenheit = ((celsius * 9) / 5) + 32;
         String conversionDescription = celsius + " Celsius is " + fahrenheit + " fahrenheit";
-        // End
-        System.out.println(conversionDescription);
+        return conversionDescription;
     }
 
     /**
@@ -42,6 +47,14 @@ public class Main {
 
         for (String name : names) {
             // Call your function
+            itemArrayPrinter(name);
+        }
+    }
+    private static void itemArrayPrinter(String name){
+        if(!name.matches(".*[0-9].*")){
+            System.out.println(name.toUpperCase().trim());
+        } else {
+            System.out.println("Invalid");
         }
     }
 
@@ -57,5 +70,9 @@ public class Main {
         int weightInGrams = 500;
 
         // Call your function
+        stringPrinter(myLunchPrice,lunchType,description,weightInGrams);
+    }
+    private static void stringPrinter(double price, String type, String description, int weight){
+        System.out.printf("Price = %.2f \n Type = %s \n Description = %s \n Weight = %d\n",price, type, description, weight);
     }
 }

@@ -20,6 +20,17 @@ public class Exercises {
         System.out.println("Exercise 1:");
 
         // Write and use your 5 getters and setters!
+        Student student = new Student();
+
+        student.setStudentName("Filippo");
+        student.setStudentAge(27);
+        student.setStudentGender("Male");
+        student.setStudentHeight(1.80f);
+        student.setStudentWeight(75.0f);
+
+        System.out.println(student.getStudentName() + " " +
+                student.getStudentAge() + " " + student.getStudentGender() + " "
+                + student.getStudentHeight() + " " + student.getStudentWeight());
     }
 
     /**
@@ -36,6 +47,17 @@ public class Exercises {
         System.out.println("\nExercise 2:");
 
         //Write your code here
+        Student student = new Student();
+
+        student.setStudentName("Filippo");
+        student.setStudentAge(-27);
+        student.setStudentGender("Male");
+        student.setStudentHeight(1.80f);
+        student.setStudentWeight(75.0f);
+
+        System.out.println(student.getStudentName() + " " +
+                student.getStudentAge() + " " + student.getStudentGender() + " "
+                + student.getStudentHeight() + " " + student.getStudentWeight());
     }
 
 }

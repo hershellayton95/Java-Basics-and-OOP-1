@@ -1,11 +1,13 @@
 package javaoop.exercises._1;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Exercises {
     public static void main(String[] args) {
         exercise2();
+        exercise3();
     }
 
     /**
@@ -32,14 +34,21 @@ public class Exercises {
         List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
 
-        // Use a for i loop
+        // Use a for i
+        for (int i = 0; i < studentNames.size(); i++) {
+        String studentName = studentNames.get(i);
+        int studentAge = studentAges.get(i);
+        Student student = createNewStudent(studentName, studentAge);
+            System.out.println(student.name + " " + student.age);
+        }
     }
 
     private static Student createNewStudent(String name, Integer age) {
         Student student = new Student();
 
         // Write your code here
-
+        student.name = name;
+        student.age = age;
         return student;
     }
 
@@ -60,5 +69,16 @@ public class Exercises {
         System.out.println("\nExercise 3:");
 
         // Write your code here
+        List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
+        List<Integer> studentAges = Arrays.asList(23, 31, 38);
+        Course course = new Course();
+        // Use a for i
+        for (int i = 0; i < studentNames.size(); i++) {
+            String studentName = studentNames.get(i);
+            int studentAge = studentAges.get(i);
+            Student student = createNewStudent(studentName, studentAge);
+            course.students.add(student);
+        }
+        System.out.println(course.students.get(0).name + " " + course.students.get(0).age);
     }
 }
